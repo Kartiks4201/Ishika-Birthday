@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Ishika!</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #f9e1e8, #d8b4e2);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            z-index: 1;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #ff6f91;
+            animation: fadeIn 2s ease-in;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.5;
+            margin: 10px 0;
+        }
+        .gif {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+        .surprise-btn {
+            background: #ff6f91;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+            transition: transform 0.2s;
+        }
+        .surprise-btn:hover {
+            transform: scale(1.1);
+        }
+        .firecracker {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #ff6f91;
+            animation: burst 2s ease-out forwards;
+            pointer-events: none;
+            z-index: 2;
+        }
+        .black-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: black;
+            opacity: 0;
+            transition: opacity 0.5s;
+            z-index: 0;
+            pointer-events: none;
+        }
+        .black-screen.active {
+            opacity: 1;
+            z-index: 1;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes burst {
+            0% {
+                transform: translate(0, 0) scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(var(--tx), var(--ty)) scale(0);
+                opacity: 0;
+            }
+        }
+        audio {
+            display: none;
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8em; }
+            p { font-size: 1em; }
+            .container { padding: 15px; }
+        }
+    </style>
+</head>
+<body>
+    <audio id="bgMusic" loop autoplay>
+        <source src="https://www.royaltyfree-music.com/free-music/sweet.mp3" type="audio/mp3">
+    </audio>
+    <div class="black-screen" id="blackScreen"></div>
+    <div class="container">
+        <h1>Happy Birthday, Cutiee Ishika! 🎉</h1>
+        <p>From Your Bhaiya Jii...💖</p>
+        <img src="https://media1.giphy.com/media/RNELiKsvREMb86Hmoy/giphy.gif" alt="Birthday GIF" class="gif">
+        <p><strong>Happy Birthday to My Dearest Cousin Sister!</strong></p>
+        <p>Even though you live far away and we meet only rarely, our bond is unbreakable. Talking to you or thinking of you feels like you're right here. That's the magic of our connection—strong, natural, and unshakable.</p>
+        <p>You're more than a cousin—you're my teacher, my supporter, my motivational speaker, and my "chai wali" and "coffee wali" who makes every moment refreshing. You play so many roles, it's impossible to sum you up in one word!</p>
+        <p>I may be older, but you never hesitate to boss me around, scold me, or even threaten me when needed. That's what makes you my "Choti Don," the lady boss I admire. Our fights, fears, and playful memories are treasures I cherish.</p>
+        <p>On your special day, thank you for guiding me, supporting me, and being you. I pray your birthday brings endless happiness, your dreams come true, and you're surrounded by love and success.</p>
+        <p>No matter the distance or time, you'll always have me, just as I'll always have you. Happy birthday, my cousin, mentor, supporter, little boss, and forever friend!</p>
+        <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3d3ZzeHlkdzhuaDBwc3QydWg2djg0OGt6NHMxNzhnZnBweWQxaDI1ZiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3ohjUSWuZ4V1tg7eEM/giphy.gif" alt="Heart GIF" class="gif">
+        <h2>Why I Love You, Ishika 💕</h2>
+        <ul style="text-align: left; margin: 10px auto; max-width: 500px;">
+            <li>You're always supportive, motivating me no matter the distance.</li>
+            <li>You treat me like a friend and a teacher, correcting me with love.</li>
+            <li>Your words give me strength to do better.</li>
+            <li>My "Choti Don"—bold, confident, and full of love.</li>
+            <li>You make me feel connected, no matter how far apart we are.</li>
+            <li>Your positivity changes my mood instantly.</li>
+            <li>You balance fun and seriousness, from chai chats to life advice.</li>
+            <li>You're trustworthy—I can share anything with you.</li>
+            <li>You're irreplaceable, playing so many roles in my life.</li>
+        </ul>
+        <h2>Special Memories 🎈</h2>
+        <p>Our playful fights when you scolded or hit me—now so precious. The rare times we meet feel unforgettable. Your support and motivation, despite the distance, mean the world.</p>
+        <h2>Our Inside Joke 😂</h2>
+        <p>Remember when Lalla rode the bicycle with you at the back, passing close to that dog? It didn’t get hit, but it barked like it won a drama award! You jumped off, crying, “Oh no! The poor dog!”—even though it was fine, shouting louder than us both!</p>
+        <button class="surprise-btn" onclick="triggerSurprise()">Final Surprise! 🎆</button>
+    </div>
+    <script>
+        function triggerSurprise() {
+            // Activate black screen
+            const blackScreen = document.getElementById("blackScreen");
+            blackScreen.classList.add("active");
+            
+            // Create firecracker particles
+            for (let i = 0; i < 150; i++) {
+                let firecracker = document.createElement("div");
+                firecracker.className = "firecracker";
+                firecracker.style.left = Math.random() * 100 + "vw";
+                firecracker.style.top = Math.random() * 100 + "vh";
+                firecracker.style.background = ["#ff6f91", "#d8b4e2", "#ffd700", "#00ff00", "#ff4500"][Math.floor(Math.random() * 5)];
+                firecracker.style.setProperty("--tx", (Math.random() * 200 - 100) + "vw");
+                firecracker.style.setProperty("--ty", (Math.random() * 200 - 100) + "vh");
+                firecracker.style.animationDuration = (Math.random() * 1 + 1) + "s";
+                document.body.appendChild(firecracker);
+                // Remove firecracker after animation
+                setTimeout(() => firecracker.remove(), 2000);
+            }
+            
+            // Show alert and reset screen
+            setTimeout(() => {
+                alert("🎆 Happy Birthday, Ishika! Here's a sky full of fireworks for my favorite Choti Don! 🎉");
+                blackScreen.classList.remove("active");
+            }, 2000);
+        }
+        // Ensure music plays on mobile
+        const bgMusic = document.getElementById("bgMusic");
+        bgMusic.play().catch(() => {
+            document.addEventListener("click", () => bgMusic.play(), { once: true });
+        });
+    </script>
+</body>
+</html>
